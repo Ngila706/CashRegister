@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light grey-blue background */
+    color: #333; /* Dark grey for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container for the cash register */
+  .container {
+    background-color: #ffffff; /* Clean white background */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    border-left: 5px solid #3498db; /* Cool blue accent */
+    border-top: 4px solid #f39c12; /* Warm orange accent */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+  }
+  
+  /* Heading styles */
+  .container h1 {
+    margin-bottom:2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue-grey for heading */
+    letter-spacing: 0.6px;
+  }
+  
+  /* Input and label styles */
+  label {
+    display: block;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    color:  #8e44ad;; /* Soft blue for labels */
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #bdc3c7; /* Cool grey border */
+    border-radius: 8px;
+    background-color: #ecf0f1; /* Light grey for input */
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #3498db; /* Bright blue on focus */
+    outline: none;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #f39c12; /* Warm orange */
+    color: #fff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+     background-color: #e67e22; /* Darker orange for hover / / Darker red */
+    transform: translateY(-3px); /* Lift effect */
+  }
+  
+  /* Change due paragraph */
+  p {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    color: #16a085; /* Green for positive results */
+  }
+  
+  /* Hidden class for visibility control */
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 400px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  }
