@@ -16,7 +16,7 @@ This project is a Cash Register application that calculates and displays change 
 ## How to Use
 1. Enter the price of the item.
 2. Enter the cash given by the customer.
-3. Click the 'Calculate' button to determine the change due.
+3. Click the 'Complete Purchase' button to determine the change due.
 4. The result will display whether the transaction is successful and provide a breakdown of the change.
 
 ## Live Demo
